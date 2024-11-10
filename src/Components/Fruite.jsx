@@ -1,3 +1,13 @@
-export default function Fruite({name, price}) {
-  return <li>{name} {price}</li>;
+export default function Fruite({ name, price }) {
+  return (
+    <>
+      {price > 5 ? (
+        <li>
+          {name} {price}
+        </li>
+      ) : (
+        ""
+      )}
+    </>
+  );
 }
